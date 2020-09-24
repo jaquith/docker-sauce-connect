@@ -11,7 +11,7 @@ RUN mkdir -p /out/bin && \
   cp sc-$SAUCE_VERSION-linux/bin/sc  /out/bin/
 
 FROM debian:jessie-slim
-LABEL maintainer="Joscha Feth <joscha@feth.com>"
+LABEL maintainer="Caleb Jaquith (caleb.jaquith@tealiumm.com)"
 COPY --from=build /out /usr/local
 
 RUN apt-get update -qqy \
