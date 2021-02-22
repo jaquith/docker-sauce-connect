@@ -1,6 +1,6 @@
 FROM alpine:3.12 as build
 #we only need python for the mitmproxy addition
-ENV SAUCE_VERSION 4.6.3
+ENV SAUCE_VERSION 4.6.4
 
 RUN apk update && apk add wget && rm -rf /var/cache/apk/*
 
